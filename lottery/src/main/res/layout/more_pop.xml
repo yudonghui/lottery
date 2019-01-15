@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/popupwindw_bg"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/gray_share"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="分享"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_14" />
+    </FrameLayout>
+    <View style="@style/divider_style_height" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/gray_report" />
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="举报"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_14" />
+    </FrameLayout>
+
+
+</LinearLayout>

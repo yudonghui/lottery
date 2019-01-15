@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hh_bqspf_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6.0dip"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="@dimen/width"
+        android:layout_height="match_parent"
+        android:background="@color/blue_bg"
+        android:gravity="center"
+        android:text="半全场"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.85"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_0"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="胜胜" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_0"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_1"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="胜平" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_1"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_2"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="胜负" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_2"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_3"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="平胜" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_3"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_4"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="平平" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_4"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_5"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="平负" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_5"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_6"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="负胜" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_6"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_7"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="负平" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_7"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bqspf_8"
+                style="@style/jz_hh_bf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="负负" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bqspf_8"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

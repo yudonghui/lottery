@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_weixin_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/subcon_bg_shape"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+          <ImageView
+              android:id="@+id/image_title"
+              android:layout_width="@dimen/line"
+              android:layout_height="@dimen/line"
+              android:layout_marginLeft="20dp"
+              android:background="@mipmap/weixin" />
+
+        <!--<com.daxiang.lottery.view.CustomImageView
+            android:id="@+id/image_title"
+            android:layout_width="@dimen/line"
+            android:layout_height="@dimen/line"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/weixin"
+            app:borderRadius="5dp" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="微信支付"
+                android:textColor="@color/txt_deep" />
+
+            <TextView
+                android:id="@+id/text_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="微信支付快捷方便"
+                android:textColor="@color/txt_middle" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            style="@style/leftrow_img"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp" />
+    </LinearLayout>
+</LinearLayout>

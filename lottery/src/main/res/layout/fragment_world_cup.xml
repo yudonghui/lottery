@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/lignt_red">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="排名"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <View style="@style/divider_style_width" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已赛"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <View style="@style/divider_style_width" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="胜/平/负"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <View style="@style/divider_style_width" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="进/失"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <View style="@style/divider_style_width" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="积分"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <com.daxiang.lottery.view.NoDataView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:yu_remark="暂无数据" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

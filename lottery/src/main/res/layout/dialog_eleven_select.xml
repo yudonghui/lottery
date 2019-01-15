@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/random_two"
+            style="@style/dialog_btn"
+            android:layout_marginLeft="10dp"
+            android:text="任选二奖金6元" />
+
+        <TextView
+            android:id="@+id/random_three"
+            style="@style/dialog_btn"
+            android:text="任选三奖金19元" />
+
+        <TextView
+            android:id="@+id/random_four"
+            style="@style/dialog_btn"
+            android:text="任选四奖金78元" />
+
+        <TextView
+            android:id="@+id/random_five"
+            style="@style/dialog_btn"
+            android:layout_marginRight="10dp"
+            android:text="任选五奖金540元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/random_six"
+            style="@style/dialog_btn"
+            android:layout_marginLeft="10dp"
+            android:text="任选六奖金90元" />
+
+        <TextView
+            android:id="@+id/random_seven"
+            style="@style/dialog_btn"
+            android:text="任选七奖金26元" />
+
+        <TextView
+            android:id="@+id/random_eight"
+            style="@style/dialog_btn"
+            android:text="任选八奖金9元" />
+
+        <TextView
+            android:id="@+id/front_one"
+            style="@style/dialog_btn"
+            android:layout_marginRight="10dp"
+            android:text="前一奖金13元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/front_two"
+            style="@style/dialog_btn"
+            android:layout_marginLeft="10dp"
+            android:text="前二直选奖金130元" />
+
+        <TextView
+            android:id="@+id/front_three"
+            style="@style/dialog_btn"
+            android:text="前三直选奖金1170元" />
+
+        <TextView
+            android:id="@+id/front_two_group"
+            style="@style/dialog_btn"
+            android:text="前二组选奖金65元" />
+
+        <TextView
+            android:id="@+id/front_three_group"
+            style="@style/dialog_btn"
+            android:layout_marginRight="10dp"
+            android:text="前三组选奖金195元" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/yinying"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/black" />
+</LinearLayout>

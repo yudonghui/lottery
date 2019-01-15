@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_pop_hh_host"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/deep_txt"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="VS"
+            android:textColor="@color/deep_txt"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_pop_hh_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/deep_txt"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- <View style="@style/jz_bf_select_item_line_h"/>-->
+    <ScrollView
+        android:id="@+id/hh_content_sv"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:scrollbars="none"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/hh_spf_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/pink_bg"
+                    android:gravity="center"
+                    android:text="胜平负"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:id="@id/ll_pop_spf_0"
+                    style="@style/jz_bf_select_item_bg">
+
+                    <TextView
+                        style="@style/jz_bf_select_item_title"
+                        android:text="主胜" />
+
+                    <TextView
+                        android:id="@id/tv_pop_spf_0"
+                        style="@style/jz_bf_select_item_sp" />
+
+                </LinearLayout>
+
+                <!--    <View style="@style/jz_bf_select_item_line_v"/>-->
+
+                <LinearLayout
+                    android:id="@id/ll_pop_spf_1"
+                    style="@style/jz_bf_select_item_bg">
+
+                    <TextView
+                        style="@style/jz_bf_select_item_title"
+                        android:text="平" />
+
+                    <TextView
+                        android:id="@id/tv_pop_spf_1"
+                        style="@style/jz_bf_select_item_sp" />
+
+                </LinearLayout>
+
+                <!-- <View style="@style/jz_bf_select_item_line_v"/>
+ -->
+                <LinearLayout
+                    android:id="@id/ll_pop_spf_2"
+                    style="@style/jz_bf_select_item_bg">
+
+                    <TextView
+                        style="@style/jz_bf_select_item_title"
+                        android:text="主负" />
+
+                    <TextView
+                        android:id="@id/tv_pop_spf_2"
+                        style="@style/jz_bf_select_item_sp" />
+
+                </LinearLayout>
+
+                <!--  <View style="@style/jz_bf_select_item_line_v"/>-->
+
+            </LinearLayout>
+
+            <!-- <View
+                 android:layout_below="@+id/hh_spf_ll"
+                 style="@style/jz_bf_select_item_line_h"/>-->
+            <!--+++++++++++++++++++++++++++++++++++++让球+++++++++++++++++++++++++++++++++++++++-->
+            <!--  <View
+                  android:id="@+id/linespf"
+                  android:layout_below="@+id/hh_spf_ll"
+                  style="@style/jz_bf_select_item_line_h"
+                  android:layout_marginTop="6.0dip"/>-->
+
+            <LinearLayout
+                android:id="@+id/hh_rqspf_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/width"
+                    android:layout_height="match_parent"
+                    android:background="@color/orange_bg"
+                    android:gravity="center"
+                    android:text="让球"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_pop_rqspf_0"
+                            style="@style/jz_bf_select_item_bg">
+
+                            <TextView
+                                android:id="@+id/tv_pop_rqspf_win"
+                                style="@style/jz_bf_select_item_title"
+                                android:text="让胜" />
+
+                            <TextView
+                                android:id="@id/tv_pop_rqspf_0"
+                                style="@style/jz_bf_select_item_sp" />
+
+                        </LinearLayout>
+
+                        <!--<View style="@style/jz_bf_select_item_line_v"/>-->
+
+                        <LinearLayout
+                            android:id="@id/ll_pop_rqspf_1"
+                            style="@style/jz_bf_select_item_bg">
+
+                            <TextView
+                                style="@style/jz_bf_select_item_title"
+                                android:text="让平" />
+
+                            <TextView
+                                android:id="@id/tv_pop_rqspf_1"
+                                style="@style/jz_bf_select_item_sp" />
+
+                        </LinearLayout>
+
+                        <!--<View style="@style/jz_bf_select_item_line_v"/>
+-->
+                        <LinearLayout
+                            android:id="@id/ll_pop_rqspf_2"
+                            style="@style/jz_bf_select_item_bg">
+
+                            <TextView
+                                style="@style/jz_bf_select_item_title"
+                                android:text="让负" />
+
+                            <TextView
+                                android:id="@id/tv_pop_rqspf_2"
+                                style="@style/jz_bf_select_item_sp" />
+                        </LinearLayout>
+
+                        <!--   <View style="@style/jz_bf_select_item_line_v"/>-->
+                    </LinearLayout>
+
+                    <!--  <View style="@style/jz_bf_select_item_line_h"/>-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/tubiao_size"
+                        android:background="@drawable/table_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/rqs"
+                            android:layout_width="@dimen/width_wenzi"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="让球胜平负（主队-1）"
+                            android:textColor="@color/txt_light" />
+
+                        <!-- <View style="@style/jz_bf_select_item_line_v"/>-->
+                    </LinearLayout>
+
+                    <!--<View style="@style/jz_bf_select_item_line_h"/>-->
+                </LinearLayout>
+            </LinearLayout>
+            <!--++++++++++++++++++++++++++半全场++++++++++++++++++++++++++++++-->
+            <include layout="@layout/jczq_pop_view_bqc_result" />
+            <!--+++++++++++++++++++++++++++++总进球数++++++++++++++++++++++++++++++++-->
+            <include
+                android:id="@+id/hh_zjq_ll"
+                layout="@layout/jczq_pop_view_zjq_result" />
+
+            <include
+                android:id="@+id/hh_bf_ll"
+                layout="@layout/jczq_pop_view_bf_result" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/default_h_line"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginTop="10.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footer_heigh"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/hh_pop_cancel"
+            style="@style/pop_cancal" />
+
+        <View
+            style="@style/default_v_line"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/hh_pop_confirm"
+            style="@style/pop_ok" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_rebate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.lotteryactivity.MyRebateActivity">
+
+    <com.daxiang.lottery.view.TitleBar
+        android:id="@+id/rebate_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigh" />
+
+    <com.daxiang.lottery.view.NoDataView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"
+        app:yu_background="@mipmap/no_data"
+        app:yu_remark="暂无数据" />
+
+    <ListView
+        android:id="@+id/lv_rebate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

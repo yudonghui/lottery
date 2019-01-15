@@ -1,0 +1,234 @@
+{
+  "sign": "a443c26aa4bebb453ed1228da9009719",
+  "msg": "成功",
+  "code": 0,
+  "data": {
+    "items": [
+      {
+        "serial": 1,
+        "prize": 2.90,
+        "team_name": "巴西",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671301.png",
+        "status": 1
+      },
+      {
+        "serial": 2,
+        "prize": 3.50,
+        "team_name": "德国",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671302.png",
+        "status": 1
+      },
+      {
+        "serial": 3,
+        "prize": 4.10,
+        "team_name": "西班牙",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671303.png",
+        "status": 1
+      },
+      {
+        "serial": 4,
+        "prize": 4.50,
+        "team_name": "阿根廷",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671304.png",
+        "status": 1
+      },
+      {
+        "serial": 5,
+        "prize": 5.00,
+        "team_name": "法国",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671305.png",
+        "status": 1
+      },
+      {
+        "serial": 6,
+        "prize": 10.00,
+        "team_name": "比利时",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671306.png",
+        "status": 1
+      },
+      {
+        "serial": 7,
+        "prize": 15.00,
+        "team_name": "葡萄牙",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671307.png",
+        "status": 1
+      },
+      {
+        "serial": 8,
+        "prize": 14.00,
+        "team_name": "英格兰",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671308.png",
+        "status": 1
+      },
+      {
+        "serial": 9,
+        "prize": 22.00,
+        "team_name": "乌拉圭",
+        "team_logo": "https://res.51caixiang.com/icon/champion/4671309.png",
+        "status": 1
+      },
+      {
+        "serial": 10,
+        "prize": 25.00,
+        "team_name": "哥伦比亚",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713010.png",
+        "status": 1
+      },
+      {
+        "serial": 11,
+        "prize": 35.00,
+        "team_name": "克罗地亚",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713011.png",
+        "status": 1
+      },
+      {
+        "serial": 12,
+        "prize": 70.00,
+        "team_name": "俄罗斯",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713012.png",
+        "status": 1
+      },
+      {
+        "serial": 13,
+        "prize": 70.00,
+        "team_name": "墨西哥",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713013.png",
+        "status": 1
+      },
+      {
+        "serial": 14,
+        "prize": 65.00,
+        "team_name": "波兰",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713014.png",
+        "status": 1
+      },
+      {
+        "serial": 15,
+        "prize": 125.00,
+        "team_name": "瑞士",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713015.png",
+        "status": 1
+      },
+      {
+        "serial": 16,
+        "prize": 100.00,
+        "team_name": "丹麦",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713016.png",
+        "status": 1
+      },
+      {
+        "serial": 17,
+        "prize": 175.00,
+        "team_name": "塞尔维亚",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713017.png",
+        "status": 1
+      },
+      {
+        "serial": 18,
+        "prize": 200.00,
+        "team_name": "瑞典",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713018.png",
+        "status": 1
+      },
+      {
+        "serial": 19,
+        "prize": 200.00,
+        "team_name": "秘鲁",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713019.png",
+        "status": 1
+      },
+      {
+        "serial": 20,
+        "prize": 250.00,
+        "team_name": "日本",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713020.png",
+        "status": 1
+      },
+      {
+        "serial": 21,
+        "prize": 250.00,
+        "team_name": "尼日利亚",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713021.png",
+        "status": 1
+      },
+      {
+        "serial": 22,
+        "prize": 200.00,
+        "team_name": "塞内加尔",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713022.png",
+        "status": 1
+      },
+      {
+        "serial": 23,
+        "prize": 300.00,
+        "team_name": "埃及",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713023.png",
+        "status": 1
+      },
+      {
+        "serial": 24,
+        "prize": 250.00,
+        "team_name": "冰岛",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713024.png",
+        "status": 1
+      },
+      {
+        "serial": 25,
+        "prize": 700.00,
+        "team_name": "突尼斯",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713025.png",
+        "status": 1
+      },
+      {
+        "serial": 26,
+        "prize": 600.00,
+        "team_name": "澳大利亚",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713026.png",
+        "status": 1
+      },
+      {
+        "serial": 27,
+        "prize": 500.00,
+        "team_name": "摩洛哥",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713027.png",
+        "status": 1
+      },
+      {
+        "serial": 28,
+        "prize": 600.00,
+        "team_name": "韩国",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713028.png",
+        "status": 1
+      },
+      {
+        "serial": 29,
+        "prize": 600.00,
+        "team_name": "伊朗",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713029.png",
+        "status": 1
+      },
+      {
+        "serial": 30,
+        "prize": 500.00,
+        "team_name": "哥斯达黎加",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713030.png",
+        "status": 1
+      },
+      {
+        "serial": 31,
+        "prize": 800.00,
+        "team_name": "巴拿马",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713031.png",
+        "status": 1
+      },
+      {
+        "serial": 32,
+        "prize": 1000.00,
+        "team_name": "沙特",
+        "team_logo": "https://res.51caixiang.com/icon/champion/46713032.png",
+        "status": 1
+      }
+    ],
+    "timeStamp": 1525745068393
+  }
+}

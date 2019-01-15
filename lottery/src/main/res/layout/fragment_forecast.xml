@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.daxiang.lottery.view.NoDataView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:yu_background="@mipmap/no_data"
+        app:yu_remark="暂无数据" />
+
+    <LinearLayout
+        android:id="@+id/ll_forecast_rate"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fff4d4"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:padding="6dp"
+            android:src="@mipmap/yellow_ad" />
+
+        <TextView
+            android:id="@+id/forecast_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="精选预测推单"
+            android:textColor="#f5aa4d"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray_bg" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ydh.refresh_layout.SmartRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:srlEnableLoadMore="false">
+
+            <com.ydh.refresh_layout.header.YuHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:divider="@color/gray_bg"
+                    android:dividerHeight="5dp" />
+
+                <View
+                    android:id="@+id/footer_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </com.ydh.refresh_layout.SmartRefreshLayout>
+
+        <TextView
+            android:id="@+id/confirm_forecast"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@color/red_txt"
+            android:gravity="center"
+            android:text="立即预约"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.daxiang.lottery.view.JcBuyBottomViewForecast
+                android:id="@+id/jc_buy_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_mutile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/mutile10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center"
+                    android:text="20倍"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/mutile20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center"
+                    android:text="50倍"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/mutile50"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center"
+                    android:text="100倍"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/mutile100"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center"
+                    android:text="200倍"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_buy_bttomview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_buy">
+
+                <include layout="@layout/buy_bttomview_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

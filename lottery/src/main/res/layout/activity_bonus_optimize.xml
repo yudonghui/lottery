@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.daxiang.lottery.view.TitleBar
+        android:id="@+id/optimize_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigh" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_bg">
+
+        <TextView
+            android:id="@+id/tv_bonus_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/text_dark_gray1"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="购买计划"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_bonus_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="@color/red_txt"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_gray2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_win_stable"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/lottery_sel_btn_left_sel"
+            android:gravity="center"
+            android:text="平稳盈利"
+            android:textColor="@color/red_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_win_easy"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/lottery_sel_btn_middle_sel"
+            android:gravity="center"
+            android:text="中奖最易"
+            android:textColor="@color/red_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_win_high"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/lottery_sel_btn_right_sel"
+            android:gravity="center"
+            android:text="奖金最高"
+            android:textColor="@color/red_txt"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip">
+
+        <TextView
+            android:id="@+id/text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:text="@string/hint_average"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_bg">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="投注组合"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="每注奖金"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="倍数"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="奖金(元)"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_bet_bonus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.06"
+        android:cacheColorHint="#00000000"
+        android:childDivider="#00000000"
+        android:divider="@color/default_line"
+        android:dividerHeight="0.5dip"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/ll_recommend"
+        android:layout_width="133dp"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|right"
+        android:background="@mipmap/one_award_recommend"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/recommend_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:singleLine="true"
+            android:text="立即推荐"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+
+    <!-- 底部投注按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_buy"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="奖金范围"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_bonus_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="00.00"
+                android:textColor="@color/red_txt"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_hemai"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/ball_size"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/hm2"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_bet_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red_theme"
+            android:gravity="center"
+            android:onClick="onClickSubmit"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="立即预约"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</LinearLayout>

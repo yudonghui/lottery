@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorNotification">#D80204</color>
+    <!-- basic -->
+    <color name="near_black">#ff080808</color>
+    <color name="red">#ffff0000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="score_green">#3b9c0e</color>
+    <color name="score_red">#ea2628</color>
+    <color name="greens">#FF5F9E5F</color>
+    <color name="zise">#A020F0</color>
+    <color name="kesheng">#40E0D0</color>
+    <color name="rate">#D9B585</color>
+    <color name="select_gyj_item">#fcf4a9</color>
+
+    <color name="bet_text_color">#ff888d92</color>
+
+    <color name="gray">#ff959183</color>
+    <color name="blue">#ff165298</color>
+    <color name="brown">#ff856208</color>
+    <color name="basic_red">#ffec2326</color>
+    <color name="top_bar_bg_red">#EA2627</color>
+    <color name="foot_bar_bg_gray">#3A3A3A</color>
+    <color name="basic_blue">#ff2378ec</color>
+    <color name="basic_orange">#ffe13d31</color>
+    <color name="bg_gray">#FFE3E6EA</color>
+    <color name="bg_gray_bottom">#FFEEEEEE</color>
+    <color name="bg_dark_gray">#FFC6C6C6</color>
+    <color name="global_gray">#E1E1E1</color>
+    <color name="list_divider">#ffcccccc</color>
+    <color name="list_item_pressed">#ffc6c6c6</color>
+    <color name="border_gray">#ff808080</color>
+    <color name="hall_item_pressed">#ffbdbcbe</color>
+
+
+    <!-- titlebar -->
+    <color name="com_btn_disabled">#ffcccccc</color>
+    <color name="com_btn_dark_normal">#ff222222</color>
+    <color name="com_btn_dark_pressed">#ff111111</color>
+    <color name="title_red_pressed">#ff8e1124</color>
+    <color name="title_red_normal">#ffc33f51</color>
+    <color name="title_normal">#ffffffff</color>
+    <color name="title_btn_pressed">#ff8e1124</color>
+    <color name="title_bar_background">#ffffffff</color>
+    <color name="title_text_color">#ffec2326</color>
+
+    <!-- settings -->
+    <color name="settings_exit_color">#ed1827</color>
+
+    <!-- recharge -->
+    <color name="recharge_bg">#e3e6e9</color>
+    <color name="recharge_money_btn">#eea923</color>
+    <color name="recharge_label">#878C91</color>
+    <color name="recharge_balance">#eea923</color>
+    <color name="alipay_hint">#0e63a6</color>
+    <color name="black">#FF000000</color>
+    <color name="gree_gry">#6f960f</color>
+    <color name="grees_dialog">#48c361</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bet_black">#ff161b23</color>
+    <color name="bet_gray">#ff505253</color>
+    <color name="bet_red">#fff72b2e</color>
+    <color name="bet_white">#ffffffff</color>
+
+    <color name="bg_gendandating">#e6e6e6</color>
+    <!-- extend -->
+    <color name="home_submit_exit">#E83552</color>
+    <color name="home_background_color">#161B23</color>
+    <color name="home_view_light">#2f343d</color>
+    <color name="home_view_drak">#000000</color>
+    <color name="home_text_pohone">#a7aab0</color>
+    <color name="home_register_color">#179832</color>
+    <color name="unbind_text_unpress">#ff6e00</color>
+    <color name="unbind_text_press">#bc5201</color>
+    <color name="detail_background">#eef0f3</color>
+    <color name="detail_black">#191919</color>
+    <color name="detail_devider">#d2d7dd</color>
+    <color name="detail_transparent">#33000000</color>
+    <color name="color_name">#646464</color>
+
+    <color name="chase_progress_color">#f95356</color>
+    <color name="text_dark_gray1">#9d9d9d</color>
+    <color name="light_gray2">#f4f3f1</color>
+    <color name="let_orage_bg_color">#ff6f05</color>
+    <color name="let_green_bg_color">#6fa92a</color>
+    <color name="viewpager_bg_color">#def7fc</color>
+    <color name="buy_view_bg">#dadada</color>
+
+    <!--&&&&&&&&&&&修改颜色&&&&&&&&&&&&-->
+    <!--底部导航栏颜色-->
+    <color name="tab_bg">#f7f7f7</color>
+    <!--主题红色-->
+    <!--<color name="red_theme">#0e63a6</color>-->
+    <color name="red_theme">#fa4444</color>
+    <!--让球为负时字体显示及让球颜色  绿色-->
+    <color name="green_let">#06b740</color>
+    <!--绿色背景-->
+    <color name="green_bg">#43d781</color>
+    <!--让球为正时字体显示及让球颜色  橙色-->
+    <color name="orange_let">#fa9644</color>
+    <!--橙色-->
+    <color name="orange_bg">#ff8554</color>
+    <!--黄色背景-->
+    <color name="yellow_bg">#ffc95f</color>
+    <!--灰色背景色-->
+    <color name="gray_bg">#f5f5f5</color>
+    <!--订单列表的底色-->
+    <color name="order_bg">#f9f9f9</color>
+    <!--灰色边框,底部购买灰色背景-->
+    <color name="gray_box">#dddddd</color>
+    <!--辅助字体灰色-->
+    <color name="gray_txt">#999999</color>
+    <!--篮球字体颜色-->
+    <color name="blue_txt">#2675eb</color>
+    <!--蓝色背景-->
+    <color name="blue_bg">#30cadd</color>
+    <!--深色字体颜色-->
+    <color name="deep_txt">#000000</color>
+    <!--紫色-->
+    <color name="purple">#d040e1</color>
+    <!--tablayout背景-->
+    <color name="blue_tablayout_bg">#def7fc</color>
+    <!--胜平负，胜负彩，任九场用到的背景-->
+    <color name="blue_ssr_bg">#edf1f6</color>
+    <!--带透明度的灰色阴影-->
+    <color name="gray_bg_trans">#30999999</color>
+    <color name="transparent">#00000000</color>
+    <!--深灰色,数字彩每个条目前面的小标志-->
+    <color name="gray_deep">#ff808080</color>
+    <!--红色透明-->
+    <color name="red_theme_trans">#00fe2525</color>
+    <!--加载框的颜色-->
+    <color name="loading">#d8d8d8</color>
+    <!--黄色文字。比赛的历史数据-->
+    <color name="yellow_txt">#ffb744</color>
+    <!--深灰色-->
+    <color name="deep_gray">#666666</color>
+    <!--浅灰色-->
+    <color name="light_gray">#888888</color>
+    <color name="lignt_red">#FDE9EA</color>
+    <!--红色文字-->
+    <color name="red_txt">#fa4444</color>
+    <!--粉红色-->
+    <color name="pink_bg">#ee4267</color>
+    <!--分割线的色值-->
+    <color name="divider_bg">#eeeeee</color>
+    <!--登录注册文字颜色-->
+    <color name="login_gray_txt">#cccccc</color>
+    <color name="key_ok_color">#1280FA</color>
+    <color name="key_ok_color_pressed">#0174f2</color>
+    <color name="bonus_bg">#DFDFDF</color>
+
+    <color name="match_win">#FA4443</color>
+    <color name="match_ping">#2EC11B</color>
+    <color name="match_lost">#4394EF</color>
+</resources>

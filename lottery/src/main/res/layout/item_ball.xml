@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+    <FrameLayout
+        android:id="@+id/fl_ball"
+        android:layout_width="@dimen/ball_size"
+        android:layout_height="@dimen/ball_size">
+
+        <ImageView
+            android:id="@+id/image_ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/widget_ball_red_frame"/>
+
+        <TextView
+            android:id="@+id/text_ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2"
+            android:textSize="16sp"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daxiang.lottery">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 震动的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!-- android:icon="@mipmap/icon_logo" -->
+    <application
+        android:name=".LotteryApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeFragmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.OrderFormActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.BillRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.BillRecordDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.JczqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SfcAndRjcActivity"
+            android:screenOrientation="portrait" />
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信支付回调函数 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- qq完成版 分享 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.BonusOptimizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.CardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.BankActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.NickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.TikuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.TikuanRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.NewsAdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.NewsAdDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.AlipayMyActivity"
+            android:screenOrientation="portrait" />
+        <!--
+            <activity
+            android:name="com.umpay.quickpay.UmpayActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/ump_translucent"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        -->
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.GendanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.JclqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.SuggestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.ServiceAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BaseJcActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.lotteryactivity.OrderFormDetailActivity" />
+        <activity android:name=".activity.lotteryactivity.UserInfoActivity" />
+        <!--
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="583252d0aed1793b02002264" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="42a5d2380e9499791d59232efff8d320" />
+        -->
+        <!--
+        &lt;!&ndash;Channel ID来标识App的推广渠道，作为推送消息时给用户分组的一个维度&ndash;&gt;
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" >
+        </meta-data>
+        -->
+        <!--
+            <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="10000000" />
+        -->
+        <!-- 连连支付 -->
+        <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service android:name="com.yintong.secure.service.PayService" />
+
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.DisuzActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.ForumUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.FocusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.AnotherUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.CommentContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.CollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.WenziTieActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.wonderfulactivity.LotteryForum.LookPrivilegeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.ChangPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.UpayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.BankListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TwoCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.PhoneIsExistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.ThirdBindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.ExpandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.MyRebateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.DownLineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.MoneyFindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.RebateDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.FanDianActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.JoinerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.AddDownLineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.redpacket.MyRedpacketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.redpacket.RedpacketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lotteryactivity.redpacket.RedRuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BuyActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".score.ScoreActivity" />
+        <activity android:name=".score.ScoreDetailActivity" />
+        <activity android:name=".score.ScoreBasketDetailActivity" />
+        <activity android:name=".activity.AwardResultActivity" />
+        <activity android:name=".activity.RankingActivity" />
+        <activity android:name=".activity.GodInfoActivity" />
+        <activity android:name=".activity.lotteryactivity.ZhuihaoDetailActivity" />
+        <activity android:name=".activity.BankCardFormActivity" />
+        <activity android:name=".activity.AddBankCardActivity" />
+        <activity android:name=".activity.BankCardActivity" />
+        <activity android:name=".activity.BaseNoTitleActivity" />
+        <activity android:name=".activity.lotteryactivity.PaymentResultActivity" />
+        <activity android:name=".activity.H5Activity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".activity.lotteryactivity.TikuanProcessActivity" />
+        <activity android:name=".activity.lotteryactivity.BankEidteActivity" />
+        <activity android:name=".activity.LotteryFormActivity" />
+        <activity android:name=".activity.BonusRuleActivity" />
+        <activity android:name=".activity.SearchGodActivity" />
+        <activity android:name=".activity.ForecastActivity" />
+        <activity android:name=".activity.EditeIntroduceActivity" />
+        <activity android:name=".activity.FansFollowActivity" />
+        <activity android:name=".score.MatchsDetailActivity" />
+        <activity android:name=".score.OddsDetailActivity" />
+        <activity android:name=".score.AsiaOddsDetailActivity" />
+        <activity android:name=".activity.lotteryactivity.PushSettingActivity" />
+        <activity android:name=".activity.ChampionActivity" />
+        <activity android:name=".activity.IntegrateActivity" />
+        <activity android:name=".forum.activity.ForumActivity" />
+        <activity android:name=".forum.base.BaseMvpActivity" />
+        <activity android:name=".forum.activity.EditePostActivity" />
+        <activity android:name=".forum.activity.PickOrTakeImageActivity" />
+        <activity android:name=".forum.activity.PickBigImagesActivity" />
+        <activity android:name=".forum.activity.MessageActivity" />
+        <activity android:name=".forum.activity.PostDetailActivity" />
+        <activity android:name=".forum.activity.JczqRecommendActivity" />
+        <activity android:name=".activity.lotteryactivity.PostMessageActivity" />
+        <activity android:name=".forum.activity.MoreNewsActivity" />
+        <activity android:name=".forum.activity.JclqRecommendActivity"></activity>
+    </application>
+
+</manifest>

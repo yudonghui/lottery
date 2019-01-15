@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/footer_buy"
+    android:background="@color/gray_box"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_zhushu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:text="共1注"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/tv_zhushu"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="合计：10元"
+            android:textColor="@color/red_theme"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_hemai"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ball_size"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/hm2"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/recommend_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_red_box"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="立即推荐"
+        android:textColor="@color/red_txt"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/btn_bet_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_btn"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="立即预约"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

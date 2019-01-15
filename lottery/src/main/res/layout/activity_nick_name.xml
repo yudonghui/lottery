@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBE9E5"
+    tools:context=".activity.lotteryactivity.NickNameActivity">
+    <com.daxiang.lottery.view.TitleBar
+        android:id="@+id/nickname_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigh"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_userinfo_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_heigh"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="@string/nickname"
+            android:textColor="@color/txt_deep"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:hint="@string/nickname_et_hint"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:background="@null"
+            android:ellipsize="start"
+            android:textColor="@color/txt_light"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/nickname_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/nickname_comit"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/shape_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

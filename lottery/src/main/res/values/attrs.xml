@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TimeTextView">
+
+    </declare-styleable>
+    <declare-styleable name="LotteryTextView">
+        <attr name="ltv_lotteryId" format="integer" />
+        <attr name="ltv_awardNum" format="string" />
+        <attr name="ltv_buyContent" format="string" />
+    </declare-styleable>
+
+    <!--圆角图片-->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="src" format="reference"></attr>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+        <attr name="src" />
+    </declare-styleable>
+    <declare-styleable name="BiasTextView">
+        <attr name="degree" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="NoDataView">
+        <attr name="yu_background" format="reference|integer" />
+        <attr name="yu_src" format="reference|integer" />
+        <attr name="yu_remark" format="string" />
+        <attr name="yu_buttontext" format="string" />
+        <attr name="yu_isRemark" format="boolean" />
+        <attr name="yu_isButton" format="boolean" />
+        <attr name="yu_image_width" format="dimension" />
+        <attr name="yu_image_height" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RedBlackView">
+        <attr name="rbv_red" format="integer" />
+        <attr name="rbv_black" format="integer" />
+        <attr name="rbv_ing" format="integer" />
+        <attr name="rbv_total" format="integer" />
+        <attr name="rbv_width" format="dimension" />
+        <attr name="rbv_textSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FloatViewLayout">
+        <attr name="offset" format="float" />
+    </declare-styleable>
+    <!--自定义的流式布局-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="auto_select_effect" format="boolean"></attr>
+        <attr name="max_select" format="integer"></attr>
+        <attr name="gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MatchView">
+        <attr name="mv_win" format="integer" />
+        <attr name="mv_ping" format="integer" />
+        <attr name="mv_lost" format="integer" />
+        <attr name="mv_total" format="integer" />
+        <attr name="mv_text_size" format="dimension" />
+    </declare-styleable>
+
+
+
+</resources>

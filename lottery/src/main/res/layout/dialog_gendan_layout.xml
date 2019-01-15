@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_red_top"
+        android:gravity="center"
+        android:text="发起推荐"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="提成比例:"
+            android:textColor="@color/deep_txt"
+
+            />
+
+        <EditText
+            android:id="@+id/ed_ticheng"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_whitebg_gray"
+            android:ellipsize="start"
+            android:hint="0-10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/deep_txt"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:text="%"
+            android:textColor="@color/deep_txt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="方案宣言:"
+            android:textColor="@color/deep_txt"
+
+            />
+
+        <EditText
+            android:id="@+id/ed_fangan"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_whitebg_gray"
+            android:ellipsize="start"
+            android:hint="请输入宣言内容"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="@color/deep_txt"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.1"
+            android:gravity="center_vertical"
+            android:text="保密设置:"
+            android:textColor="@color/deep_txt"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_jz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_orange_deep"
+            android:gravity="center"
+            android:text="截止公开"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_cy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="跟单公开"
+            android:textColor="@color/deep_txt"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_wq"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="完全公开"
+            android:textColor="@color/deep_txt"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_box" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@drawable/shape_white_bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_hemai_dissmiss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_box" />
+
+        <TextView
+            android:id="@+id/tv_hemai_comit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="立即预约"
+            android:textColor="@color/red_txt"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.daxiang.lottery.activity.lotteryactivity.PhoneIsExistActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_heigh"
+        android:layout_marginTop="@dimen/footer_heigh">
+
+        <ImageView
+            android:id="@+id/image_password_one_logo"
+            android:layout_width="@dimen/tubiao_size"
+            android:layout_height="@dimen/tubiao_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/shouji2" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/image_password_one_logo"
+            android:background="@null"
+            android:hint="请输入新手机号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/gray_box" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="短信收取大约需要60秒，如果没有收到验证码，请确认号码无误后，再重新发送，以最后一个验证码为准"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_heigh"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/footer_heigh"
+        android:background="@drawable/shape_btn"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

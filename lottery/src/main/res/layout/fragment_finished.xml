@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        android:id="@+id/ptrelv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        />-->
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/scrollview_finished"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_first_data"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/icon_heigh"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/deep_txt"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/no_data1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="该分类现在没有比赛，你可以看看其他..."
+                android:visibility="gone" />
+
+            <com.daxiang.lottery.view.BillListView
+                android:id="@+id/lv_first_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="#00000000" />
+
+            <TextView
+                android:id="@+id/text_second_data"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/icon_heigh"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/deep_txt"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/no_data2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="该分类现在没有比赛，你可以看看其他..."
+                android:visibility="gone" />
+
+            <com.daxiang.lottery.view.BillListView
+                android:id="@+id/lv_second_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

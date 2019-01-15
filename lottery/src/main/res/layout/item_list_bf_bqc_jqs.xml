@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_league"
+            android:layout_width="@dimen/footer_buy"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_game_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/bet_text_color"
+                android:textSize="12sp"></TextView>
+
+            <com.daxiang.lottery.view.autotextview.AutofitTextView
+                android:id="@+id/text_game_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/bet_text_color"
+                android:textSize="12sp"></com.daxiang.lottery.view.autotextview.AutofitTextView>
+
+            <com.daxiang.lottery.view.autotextview.AutofitTextView
+                android:id="@+id/text_game_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/bet_text_color"
+                android:textSize="12sp"></com.daxiang.lottery.view.autotextview.AutofitTextView>
+
+            <ImageView
+                android:id="@+id/icon_detail"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/triangle_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_host_block"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_jz_item_hostname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:text="VS"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_jz_item_guestname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/tv_jz_item_select"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ball_size"
+                android:layout_margin="10dp"
+                android:background="@drawable/table_bg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="请选择投注内容"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.daxiang.lottery.view.HistoryDataView
+        android:id="@+id/historydata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

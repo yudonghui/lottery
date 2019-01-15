@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/popupwindw_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/profit_rate"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="盈利率"
+        android:textColor="@color/deep_txt"
+        android:textSize="@dimen/sp_14" />
+
+    <View style="@style/divider_style_height" />
+
+    <TextView
+        android:id="@+id/hit_rate"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="命中率"
+        android:textColor="@color/deep_txt"
+        android:textSize="@dimen/sp_14" />
+
+    <View style="@style/divider_style_height" />
+
+    <TextView
+        android:id="@+id/gendan_money"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="跟单金额"
+        android:textColor="@color/red_txt"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        style="@style/divider_style_height"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/my_follow"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="我的关注"
+        android:textColor="@color/deep_txt"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+</LinearLayout>

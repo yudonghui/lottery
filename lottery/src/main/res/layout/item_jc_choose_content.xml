@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_clear_form"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/bet_order_delete_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/session"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_host"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:text="VS"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/tv_guest"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/jz_win_ll"
+                    style="@style/jc_item_result">
+
+                    <TextView
+                        android:id="@+id/tv_win_lable"
+                        style="@style/jczq_lable"
+                        android:text="@string/result_win" />
+
+                    <TextView
+                        android:id="@+id/tv_host_sp"
+                        style="@style/jczq_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/jz_ping_ll"
+                    style="@style/jc_item_result">
+
+                    <TextView
+                        android:id="@+id/tv_ping_lable"
+                        style="@style/jczq_lable"
+                        android:text="@string/result_ping" />
+
+                    <TextView
+                        android:id="@+id/tv_versus_sp"
+                        style="@style/jczq_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/jz_loss_ll"
+                    style="@style/jc_item_result">
+
+                    <TextView
+                        android:id="@+id/tv_loss_lable"
+                        style="@style/jczq_lable"
+                        android:text="@string/result_loss" />
+
+                    <TextView
+                        android:id="@+id/tv_guest_sp"
+                        style="@style/jczq_sp"
+                        android:text="safsf" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/choose_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red_theme"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="sdgds"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/dan_no" />
+    </LinearLayout>
+
+    <View
+        style="@style/divider_style_height"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

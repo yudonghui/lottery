@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+  >
+
+    <com.daxiang.lottery.view.TitleBar
+        android:id="@+id/titlebar_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigh"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heigh_title"
+        app:tabSelectedTextColor="@color/gray_txt"
+        app:tabTextColor="@color/gray_txt"
+        app:tabTextAppearance="@style/tablayout_text"
+        app:tabIndicatorColor="@color/red_theme"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+   <!-- <ImageView
+        android:id="@+id/no_data"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_data"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/ptrl_record"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:listSelector="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <EditText
+        android:id="@+id/fatie_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="发布..."
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:textSize="@dimen/sp_12" />
+    <TextView
+        android:id="@+id/look_privilege"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:text="公开"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

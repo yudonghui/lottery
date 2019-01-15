@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/footer_buy"
+    android:background="@color/gray_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_zhushu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="共0注5倍"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:id="@+id/high_bonus_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预测奖金:"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_max_bonuses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="0元"
+                android:textColor="@color/red_theme"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/highest_bonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234.9999"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_10"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_hemai"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ball_size"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/hm2"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_bet_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/red_theme"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="立即预约"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>

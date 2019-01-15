@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.lotteryactivity.BillRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.daxiang.lottery.view.JcTitleBar
+            android:id="@+id/titlebar_bill_record"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_heigh" />
+
+        <com.ydh.refresh_layout.SmartRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ydh.refresh_layout.header.YuHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/bill_wallet" />
+
+
+                <com.daxiang.lottery.view.NoDataView
+                    android:id="@+id/no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    app:yu_background="@mipmap/no_data"
+                    app:yu_buttontext="投注大乐透"
+                    app:yu_isButton="true"
+                    app:yu_isRemark="true"
+                    app:yu_remark="当前没有交易记录" />
+
+                <ListView
+                    android:id="@+id/lv_bill"
+                    style="@style/divider_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <com.ydh.refresh_layout.header.YuHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.ydh.refresh_layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/bg_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000000" />
+
+        <com.daxiang.lottery.view.BillView
+            android:id="@+id/billView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="90dp" />
+    </FrameLayout>
+</FrameLayout>

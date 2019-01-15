@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.daxiang.lottery.activity.LotteryFormActivity">
+
+    <com.daxiang.lottery.view.TitleBar
+        android:id="@+id/titlbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigh" />
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="提示: 前7个彩种将显示在首页, 长按拖动彩种"
+        android:textColor="@color/gray_txt"
+        android:textSize="@dimen/sp_13" />
+
+    <com.daxiang.lottery.view.DragGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:numColumns="4"
+        android:listSelector="@android:color/transparent"
+        android:verticalSpacing="10dp" />
+</LinearLayout>

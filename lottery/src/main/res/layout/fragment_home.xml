@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ydh.refresh_layout.SmartRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false">
+
+        <com.ydh.refresh_layout.header.YuHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/vp_news"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:src="@mipmap/winning_icon" />
+
+                    <com.daxiang.lottery.view.CostomAdvertisementCarousel
+                        android:id="@+id/notice_carousel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_gray_big">
+
+                    <com.daxiang.lottery.view.BallGridView
+                        android:id="@+id/gv_lottery"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_white_10"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="4"
+                        android:paddingBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="2dp"
+                        android:src="@mipmap/ad_icon" />
+
+                    <com.daxiang.lottery.view.CostomAdvertisementCarousel2
+                        android:id="@+id/ad_carousel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/banner_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/yesterday_match"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/left_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昨日赛程"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/right_line" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/yesterday_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/yesterday_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_bg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/live_match"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/left_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="直播赛事"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/right_line" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/live_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingTop="8dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/live_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_bg"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/hot_gendan"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/left_line" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门跟单"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@mipmap/right_line" />
+                </LinearLayout>
+
+                <com.daxiang.lottery.view.BillListView
+                    android:id="@+id/hot_gendan_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:divider="@color/divider_bg"
+                    android:dividerHeight="0.5dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/hot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:visibility="gone"
+                    android:background="@color/gray_bg" />
+
+                <LinearLayout
+                    android:id="@+id/hot_match"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/left_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门赛事"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/right_line" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/hot_match_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_bg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/left_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他资讯"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_14" />
+
+                    <ImageView
+                        android:layout_width="37dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@mipmap/right_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/fl_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="111.6dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@mipmap/home_kaijiang" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="开奖大厅"
+                                android:textColor="@color/red_txt"
+                                android:textSize="@dimen/sp_16" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="查询最新开奖信息"
+                                android:textColor="@color/gray_txt"
+                                android:textSize="@dimen/sp_13" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <View style="@style/divider_style_width" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_right_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="精彩预测"
+                                    android:textColor="@color/orange_let"
+                                    android:textSize="@dimen/sp_16" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="彩象精选预测"
+                                    android:textColor="@color/gray_txt"
+                                    android:textSize="@dimen/sp_13" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/forecast_home" />
+                        </LinearLayout>
+
+                        <View style="@style/divider_style_height" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_right_bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="最新资讯"
+                                    android:textColor="@color/blue_txt"
+                                    android:textSize="@dimen/sp_16" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="购彩最新资讯"
+                                    android:textColor="@color/gray_txt"
+                                    android:textSize="@dimen/sp_13" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/home_news" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_bg" />
+            </LinearLayout>
+
+        </ScrollView>
+    </com.ydh.refresh_layout.SmartRefreshLayout>
+
+    <com.daxiang.lottery.view.ScrollTitleView
+        android:id="@+id/scrollTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/keybard" />
+</FrameLayout>

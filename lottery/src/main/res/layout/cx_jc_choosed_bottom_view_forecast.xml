@@ -1,0 +1,260 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bet_extra_new"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_oonsd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_award_recommend"
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/award_recommend_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_bonus_optimize"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/bonus_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="true"
+                    android:text="奖金优化"
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_recommend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/recommend_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="true"
+                    android:text="立即推荐"
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bets_way_radioGroup_new"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_bunch"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_box"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/gray_bg"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_heigh"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="串关"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_12" />
+
+            <RelativeLayout
+                android:id="@+id/layout_buy_times"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/heigh_title"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape_whitebg_gray"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/text_buy_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:text="2串1"
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_12" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/jiantou" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="投: "
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_12" />
+
+            <EditText
+                android:id="@+id/edit_buy_times"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/heigh_title"
+                android:background="@drawable/shape_whitebg_gray"
+                android:gravity="center"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="5"
+                android:textColor="@color/deep_txt"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:text="倍"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/date_fenge" />
+
+
+    <LinearLayout
+        android:id="@+id/fastBetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bet10"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_weight="1"
+            android:background="@drawable/youhua"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickbet"
+            android:tag="10"
+            android:text="10倍"
+            android:textColor="@drawable/bet_types_select" />
+
+        <TextView
+            android:id="@+id/bet20"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/youhua"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickbet"
+            android:tag="20"
+            android:text="20倍"
+            android:textColor="@drawable/bet_types_select" />
+
+        <TextView
+            android:id="@+id/bet50"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/youhua"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickbet"
+            android:tag="50"
+            android:text="50倍"
+            android:textColor="@drawable/bet_types_select" />
+
+        <TextView
+            android:id="@+id/bet100"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/youhua"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickbet"
+            android:tag="100"
+            android:text="100倍"
+            android:textColor="@drawable/bet_types_select" />
+
+    </LinearLayout>
+</LinearLayout>

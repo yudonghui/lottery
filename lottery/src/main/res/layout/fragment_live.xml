@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ydh.refresh_layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:srlEnableLoadMore="false">
+
+    <com.ydh.refresh_layout.header.YuHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="赛事事件"
+            android:textColor="@color/gray_txt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/jczq_ll">
+
+                <ImageView
+                    style="@style/jczq_img"
+                    android:src="@mipmap/jinqiu" />
+
+                <TextView
+                    style="@style/jczq_text"
+                    android:text="进球" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/jczq_ll">
+
+                <ImageView
+                    style="@style/jczq_img"
+                    android:src="@mipmap/dianqiu" />
+
+                <TextView
+                    style="@style/jczq_text"
+                    android:text="点球" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/jczq_ll">
+
+                <ImageView
+                    style="@style/jczq_img"
+                    android:src="@mipmap/wulong" />
+
+                <TextView
+                    style="@style/jczq_text"
+                    android:text="乌龙球" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/jczq_ll">
+
+                <ImageView
+                    style="@style/jczq_img"
+                    android:src="@mipmap/huanren" />
+
+                <TextView
+                    style="@style/jczq_text"
+                    android:text="换人" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/jczq_ll">
+
+                <ImageView
+                    style="@style/jczq_img"
+                    android:src="@mipmap/yellow_card" />
+
+                <TextView
+                    style="@style/jczq_text"
+                    android:text="黄牌" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/jczq_ll">
+
+                <ImageView
+                    style="@style/jczq_img"
+                    android:src="@mipmap/red_card" />
+
+                <TextView
+                    style="@style/jczq_text"
+                    android:text="红牌" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/jczq_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.25"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/jczq_img"
+                    android:src="@mipmap/yellow_red" />
+
+                <TextView
+                    style="@style/jczq_text"
+                    android:text="二黄变红" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_box" />
+
+        <TextView
+            android:id="@+id/no_data"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="暂无比赛数据"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+</com.ydh.refresh_layout.SmartRefreshLayout>

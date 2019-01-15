@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_heigh"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_bunch_playmethod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/leftkuang"
+            android:gravity="center"
+            android:text="串关玩法" />
+
+        <TextView
+            android:id="@+id/text_single_playmethod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="单关玩法" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/global_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/btn_spf"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="胜平负" />
+
+        <TextView
+            android:id="@+id/btn_rqspf"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="让球胜平负" />
+
+        <TextView
+            android:id="@+id/btn_cbf"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="比分" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/btn_jqs"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="总进球" />
+
+        <TextView
+            android:id="@+id/btn_bqc"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="半全场" />
+
+        <TextView
+            android:id="@+id/btn_hh"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/footer_heigh"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:text="混合过关" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/yinying"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/black" />
+</LinearLayout>

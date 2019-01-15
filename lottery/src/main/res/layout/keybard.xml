@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_keybard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:id="@+id/keyboard_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alpha="0.3"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="投"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_13" />
+
+        <EditText
+            android:id="@+id/edit_buy_times"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_whitebg_gray"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="5"
+            android:textColor="@color/deep_txt"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="倍    共计: "
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="10元"
+            android:textColor="@color/red_txt"
+            android:textSize="@dimen/sp_13" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/key_down" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/one_mutil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="20倍"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_box" />
+
+        <TextView
+            android:id="@+id/two_mutil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="50倍"
+            android:textColor="@color/gray_txt"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_box" />
+
+        <TextView
+            android:id="@+id/three_mutil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="100倍"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_box" />
+
+        <TextView
+            android:id="@+id/four_mutil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="200倍"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_bg" />
+
+   <com.daxiang.lottery.view.MyKeyBoardView
+       android:id="@+id/keyboard_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:keyBackground="@drawable/shape_keybard_bg"
+       android:keyPreviewOffset="0dp"
+       android:keyTextColor="#000"
+       android:paddingTop="0dp"
+       android:shadowColor="#fff"
+       android:shadowRadius="0.0" />
+</LinearLayout>

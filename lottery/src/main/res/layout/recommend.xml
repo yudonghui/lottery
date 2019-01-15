@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_recommend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/allPrize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red_txt"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="累计中奖金额"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_box" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/peoples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red_txt"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="跟单人数"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_box" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/money2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red_txt"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="跟单中奖金额"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lianhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red_txt"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="连红"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_box" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/mingzhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red_txt"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="命中率"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_box" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/huibao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/red_txt"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="回报率"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/hit_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/hit_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/red_txt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="部分战绩"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_bg" />
+
+    <FrameLayout
+        android:id="@+id/hit_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:id="@+id/red_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@color/red_txt" />
+
+                <TextView
+                    android:id="@+id/red_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="红5场"
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/black_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@color/gray_box" />
+
+                <TextView
+                    android:id="@+id/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="黑5场"
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ing_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@color/orange_let" />
+
+                <TextView
+                    android:id="@+id/ing_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="进行中5场"
+                    android:textColor="@color/deep_txt"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/maxRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="10dp"
+            android:text="最长连红"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/maxBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:paddingRight="10dp"
+            android:text="最长连黑"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <com.daxiang.lottery.view.RedBlackView
+            android:id="@+id/redBlackView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:rbv_textSize="12sp"
+            app:rbv_width="20dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/hit_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="近十单状态: "
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/one"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/two"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/three"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/four"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/five"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/six"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/seven"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/eight"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/nine"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="@color/gray_box" />
+
+        <ImageView
+            android:id="@+id/ten"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:padding="1dp"
+            android:src="@mipmap/black_bet" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/red_txt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="推荐神单"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View style="@style/divider_style_height" />
+
+    <com.daxiang.lottery.view.NoDataView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:yu_background="@mipmap/no_data"
+        app:yu_remark="暂无数据" />
+
+    <com.daxiang.lottery.view.BillListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_bg"
+        android:dividerHeight="5dp" />
+</LinearLayout>

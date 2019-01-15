@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6.0dip"
+              android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="@dimen/width"
+        android:layout_height="match_parent"
+        android:background="@color/green_bg"
+        android:gravity="center"
+        android:text="总进球"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<View
+            style="@style/jz_bf_select_item_line_h"
+            />-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_0"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="0"/>
+
+                <TextView
+                    android:text="asdfd"
+                    android:id="@+id/tv_pop_zjq_0"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+          <!--  <View style="@style/jz_bf_select_item_line_v"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_1"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="1"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_zjq_1"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+           <!-- <View style="@style/jz_bf_select_item_line_v"/>
+-->
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_2"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="2"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_zjq_2"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+          <!--  <View style="@style/jz_bf_select_item_line_v"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_3"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="3"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_zjq_3"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+           <!-- <View style="@style/jz_bf_select_item_line_v"/>-->
+        </LinearLayout>
+<!--
+
+        <View style="@style/jz_bf_select_item_line_h"/>
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+          <!--  <View style="@style/jz_bf_select_item_line_v"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_4"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="4"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_zjq_4"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+          <!--  <View style="@style/jz_bf_select_item_line_v"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_5"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="5"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_zjq_5"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+          <!--  <View style="@style/jz_bf_select_item_line_v"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_6"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="6"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_zjq_6"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+         <!--   <View style="@style/jz_bf_select_item_line_v"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_pop_zjq_7"
+                style="@style/jz_hh_jqs_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="7+"/>
+
+                <TextView
+                    android:id="@+id/tv_pop_zjq_7"
+                    style="@style/jz_hh_bf_select_item_sp"/>
+            </LinearLayout>
+
+            <!--<View style="@style/jz_bf_select_item_line_v"/>-->
+        </LinearLayout>
+
+       <!-- <View style="@style/jz_bf_select_item_line_h"/>-->
+    </LinearLayout>
+
+</LinearLayout>

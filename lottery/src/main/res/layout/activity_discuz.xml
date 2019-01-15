@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.wonderfulactivity.LotteryForum.DisuzActivity">
+
+    <com.daxiang.lottery.view.TitleBar
+        android:id="@+id/titlebar_forum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigh" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title" >
+
+        <ListView
+            android:id="@+id/lv_forum"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/invis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heigh_title"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/forum_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heigh_title"
+                android:background="@color/gray_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="竞彩"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_14"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

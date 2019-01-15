@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_item_heigh">43dp</dimen>
+    <dimen name="faxian_heigh">40dp</dimen>
+    <dimen name="grid_item_textSize">10sp</dimen>
+    <dimen name="vp_heigh">110dp</dimen>
+    <dimen name="ball_line">230dp</dimen>
+    <dimen name="ball_size">30dp</dimen>
+    <dimen name="titlebar_heigh">45dp</dimen>
+    <dimen name="radioGroup_heigh">43dp</dimen>
+    <dimen name="footer_heigh">43dp</dimen>
+    <dimen name="tubiao_size">22dp</dimen>
+    <dimen name="icon_heigh">24dp</dimen>
+    <dimen name="line">30dp</dimen>
+    <dimen name="footer_buy">50dp</dimen>
+    <dimen name="editview_width">70dp</dimen>
+    <dimen name="width">15dp</dimen>
+    <dimen name="width_ll">88dp</dimen>
+    <dimen name="width_wenzi">264dp</dimen>
+    <dimen name="width_jq">66dp</dimen>
+    <dimen name="width_bf">37.71dp</dimen>
+    <dimen name="heigh_title">25.8dp</dimen>
+    <dimen name="heigh_odds">17.2dp</dimen>
+    <dimen name="heigh_listview">310dp</dimen>
+    <dimen name="heigh_listview_ball">330dp</dimen>
+    <dimen name="width_bf_two">75.43dp</dimen>
+    <dimen name="width_bf_three">113.14dp</dimen>
+    <!--我的界面的球大小-->
+    <dimen name="ball_35">35dp</dimen>
+</resources>

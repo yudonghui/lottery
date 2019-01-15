@@ -1,0 +1,198 @@
+{
+    "code": 0,
+    "msg": "根据客服端获取可售彩种列表成功",
+    "data": {
+        "item2": [
+            {
+                "lotCode": "23529",
+                "issueNo": "2016149",
+                "awardPool": "3816313703.00"
+            },
+            {
+                "lotCode": "51",
+                "issueNo": "2016149",
+                "awardPool": "1069092085.00"
+            },
+            {
+                "lotCode": "10022",
+                "issueNo": "2016150",
+                "awardPool": "36027297.00"
+            },
+            {
+                "lotCode": "23528",
+                "issueNo": "2016149",
+                "awardPool": "0.00"
+            }
+        ],
+        "item1": [
+            {
+                "id": 1,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "42",
+                "serial": 50,
+                "state": 1,
+                "logoName": "jczq",
+                "lotName": "竞彩足球",
+                "description": "2串1倍投返奖高",
+                "remark": null
+            },
+            {
+                "id": 2,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "43",
+                "serial": 49,
+                "state": 1,
+                "logoName": "jclq",
+                "lotName": "竞彩篮球",
+                "description": "NBA赛事一网打净",
+                "remark": null
+            },
+            {
+                "id": 3,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "1000",
+                "serial": 48,
+                "state": 1,
+                "logoName": "jczq",
+                "lotName": "竞足单关",
+                "description": "单关固定易中奖",
+                "remark": null
+            },
+            {
+                "id": 5,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "1001",
+                "serial": 47,
+                "state": 1,
+                "logoName": "jclq",
+                "lotName": "竞篮单关",
+                "description": "单关固定易中奖",
+                "remark": null
+            },
+            {
+                "id": 6,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "21406",
+                "serial": 46,
+                "state": 1,
+                "logoName": "syydj",
+                "lotName": "十一运夺金",
+                "description": "猜中1球就有奖",
+                "remark": null
+            },
+            {
+                "id": 7,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "23529",
+                "serial": 45,
+                "state": 1,
+                "logoName": "dlt",
+                "lotName": "超级大乐透",
+                "description": "3元可中1600万",
+                "remark": null
+            },
+            {
+                "id": 8,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "11",
+                "serial": 44,
+                "state": 1,
+                "logoName": "sfc",
+                "lotName": "胜负彩",
+                "description": "猜14场博500万",
+                "remark": null
+            },
+            {
+                "id": 9,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "19",
+                "serial": 43,
+                "state": 1,
+                "logoName": "rj",
+                "lotName": "任九场",
+                "description": "猜9场就中奖",
+                "remark": null
+            },
+            {
+                "id": 10,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "33",
+                "serial": 42,
+                "state": 1,
+                "logoName": "pls",
+                "lotName": "排列三",
+                "description": "猜中3球赢千元",
+                "remark": null
+            },
+            {
+                "id": 11,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "35",
+                "serial": 41,
+                "state": 1,
+                "logoName": "plw",
+                "lotName": "排列五",
+                "description": "2元博10万",
+                "remark": null
+            },
+            {
+                "id": 12,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "10022",
+                "serial": 40,
+                "state": 1,
+                "logoName": "qxc",
+                "lotName": "七星彩",
+                "description": "2元可中50万",
+                "remark": null
+            },
+            {
+                "id": 13,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "23528",
+                "serial": 39,
+                "state": 1,
+                "logoName": "qlc",
+                "lotName": "七乐彩",
+                "description": "30选7赢百万",
+                "remark": null
+            },
+            {
+                "id": 14,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "51",
+                "serial": 38,
+                "state": 1,
+                "logoName": "ssq",
+                "lotName": "双色球",
+                "description": "2元可中1000万",
+                "remark": null
+            },
+            {
+                "id": 15,
+                "type": "ios",
+                "version": "3.5.7",
+                "lotCode": "52",
+                "serial": 37,
+                "state": 1,
+                "logoName": "fcsd",
+                "lotName": "福彩3D",
+                "description": "好玩易中奖",
+                "remark": null
+            }
+        ]
+    }
+}

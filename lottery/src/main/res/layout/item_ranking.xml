@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:padding="10dp"
+            android:src="@mipmap/default_header" />
+
+        <TextView
+            android:id="@+id/canBuy"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_red_circle"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/deep_txt"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/blackTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gddfgdfhdgf"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/redTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdffgdsfg"
+            android:textColor="@color/red_txt"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/grayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dfgdfgdhdfh"
+            android:textColor="@color/gray_txt"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+</LinearLayout>

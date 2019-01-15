@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_league"
+            android:layout_width="@dimen/footer_buy"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_game_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/bet_text_color"
+                android:textSize="12sp"></TextView>
+
+            <com.daxiang.lottery.view.autotextview.AutofitTextView
+                android:id="@+id/text_game_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/bet_text_color"
+                android:textSize="12sp"></com.daxiang.lottery.view.autotextview.AutofitTextView>
+
+            <com.daxiang.lottery.view.autotextview.AutofitTextView
+                android:id="@+id/text_game_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/bet_text_color"
+                android:textSize="12sp"></com.daxiang.lottery.view.autotextview.AutofitTextView>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image_dg"
+            android:src="@drawable/dg_icon"
+            android:layout_width="22dp"
+            android:visibility="invisible"
+            android:layout_height="22dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:layout_margin="2.0dip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_guest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="5"
+                android:singleLine="true"
+                android:textColor="@color/txt_deep"
+                android:textSize="16sp" />
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_weight="1">
+    <TextView
+        android:id="@+id/tv_host"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:textColor="@color/txt_deep"
+        android:textSize="16.0sp" />
+    <TextView
+        android:id="@+id/tv_rangqiu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_awary_win"
+                style="@style/jc_item_result">
+
+                <TextView
+                    android:id="@+id/awary_win_title"
+                    style="@style/jczq_lable"
+                    android:text="客胜[让]" />
+
+                <TextView
+                    android:id="@+id/awary_win_odds"
+                    style="@style/jczq_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_win"
+                style="@style/jc_item_result"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:id="@+id/home_win_title"
+                    style="@style/jczq_lable"
+                    android:text="胜[让]" />
+
+                <TextView
+                    android:id="@+id/home_win_odds"
+                    style="@style/jczq_sp"
+                    android:text="safsf" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

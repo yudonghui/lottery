@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.lotteryactivity.ChangPhoneActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ball_size"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="登录彩象彩票，即刻享受一站式购彩服务"
+        android:textColor="@color/gray_txt"
+        android:textSize="@dimen/sp_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_heigh"
+        android:layout_marginTop="@dimen/footer_heigh">
+
+        <ImageView
+            android:id="@+id/image_password_one_logo"
+            android:layout_width="@dimen/tubiao_size"
+            android:layout_height="@dimen/tubiao_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/shouji2" />
+
+        <EditText
+            android:id="@+id/edit_phone_old"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/image_password_one_logo"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+            android:hint="请输入老手机号"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_heigh">
+
+        <ImageView
+            android:id="@+id/image_phone_logo"
+            android:layout_width="@dimen/tubiao_size"
+            android:layout_height="@dimen/tubiao_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/safe" />
+
+
+        <TextView
+            android:id="@+id/text_obtain_code"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/red_theme"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/text_obtain_code"
+            android:layout_toRightOf="@id/image_phone_logo"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_txt"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/text_obtain_code"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/text_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_heigh"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:text="下一步"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/footer_heigh"
+        android:background="@drawable/shape_btn" />
+</LinearLayout>

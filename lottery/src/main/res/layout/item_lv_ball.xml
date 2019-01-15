@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/gray_right"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:text="百位"
+        android:textColor="@color/deep_gray"
+        android:textSize="@dimen/sp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dantuo_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/deep_txt"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+
+        <com.daxiang.lottery.view.BallGridView
+            android:id="@+id/gv_red_ball"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="7dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:verticalSpacing="4dp" />
+
+        <View
+            android:id="@+id/cutting_line"
+            style="@style/divider_style_height"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+</LinearLayout>

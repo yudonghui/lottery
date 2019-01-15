@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/two_code_bg"
+        android:layout_width="match_parent"
+        android:background="@mipmap/two_code_bg"
+        android:layout_height="match_parent">
+
+       <!-- <ImageView
+            android:id="@+id/two_code_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/two_code_bg" />-->
+
+        <ImageView
+            android:id="@+id/two_code"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/shape_btn" />
+
+        <TextView
+            android:id="@+id/save_two_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="保存二维码至相册"
+            android:textColor="@color/blue_txt"
+            android:textSize="@dimen/sp_14" />
+    </FrameLayout>
+</LinearLayout>

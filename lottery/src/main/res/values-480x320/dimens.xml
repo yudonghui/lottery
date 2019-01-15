@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_item_heigh">40dp</dimen>
+    <dimen name="grid_item_titlesize">12sp</dimen>
+    <dimen name="grid_item_detailsize">10sp</dimen>
+    <dimen name="titlebar_heigh">40dp</dimen>
+    <dimen name="titlebar_textsize">20sp</dimen>
+    <dimen name="vp_heigh">100dp</dimen>
+    <dimen name="icon_heigh">20dp</dimen>
+
+    <dimen name="ball_line">210dp</dimen>
+    <dimen name="ball_size">27dp</dimen>
+    <dimen name="footer_heigh">41dp</dimen>
+    <dimen name="tubiao_size">20dp</dimen>
+    <dimen name="footer_buy">50dp</dimen>
+    <dimen name="line">30dp</dimen>
+    <dimen name="editview_width">60dp</dimen>
+    <dimen name="width">13dp</dimen>
+    <dimen name="width_ll">80dp</dimen>
+    <dimen name="width_wenzi">240dp</dimen>
+    <dimen name="width_jq">60dp</dimen>
+    <dimen name="width_bf">34.28dp</dimen>
+    <dimen name="heigh_listview">250dp</dimen>
+    <dimen name="heigh_listview_ball">270dp</dimen>
+    <dimen name="width_bf_two">68.57dp</dimen>
+    <dimen name="width_bf_three">102.86dp</dimen>
+    <!--我的界面的球大小-->
+    <dimen name="ball_35">30dp</dimen>
+</resources>

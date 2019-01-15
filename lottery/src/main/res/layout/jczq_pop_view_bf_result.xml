@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="@dimen/width"
+        android:layout_height="match_parent"
+        android:background="@color/yellow_bg"
+        android:gravity="center"
+        android:text="比分"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--第一行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_0"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="1:0" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_0"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_1"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="2:0" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_1"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_2"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="2:1" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_2"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_3"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="3:0" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_3"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_4"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="3:1" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_4"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_5"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="3:2" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_5"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_6"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="4:0" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_6"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--++++++++++++++++第二行+++++++++++++++++++-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_7"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="4:1" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_7"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_8"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="4:2" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_8"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_9"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="5:0" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_9"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_10"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="5:1" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_10"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_11"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="5:2" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_11"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_12"
+                android:layout_width="@dimen/width_bf_two"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="胜其他" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_12"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--第三行-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_13"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="0:0" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_13"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_14"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="1:1" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_14"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_15"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="2:2" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_15"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_16"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="3:3" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_16"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_17"
+                android:layout_width="@dimen/width_bf_three"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="平其他" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_17"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--第五行-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_18"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="0:1" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_18"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_19"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="0:2" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_19"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_20"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="1:2" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_20"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_21"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="0:3" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_21"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_22"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="1:3" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_22"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_23"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="2:3" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_23"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_24"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="0:4" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_24"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--第六行-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_25"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="1:4" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_25"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_26"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="2:4" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_26"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_27"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="0:5" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_27"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_28"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="1:5" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_28"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_29"
+                style="@style/jz_hh_cbf_select_item_bg">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="2:5" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_29"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pop_bf_30"
+                android:layout_width="@dimen/width_bf_two"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/jz_hh_bf_select_item_title"
+                    android:text="负其他" />
+
+                <TextView
+                    android:id="@+id/tv_pop_bf_30"
+                    style="@style/jz_hh_bf_select_item_sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

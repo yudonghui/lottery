@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/red_theme"
+            android:visibility="gone" />
+
+        <com.daxiang.lottery.view.TitleBar
+            android:id="@+id/titlebar_gendan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_heigh" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                android:layout_marginTop="6dp"
+                android:background="@drawable/shape_gray_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/gray_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="请输入您要搜索的大神"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.daxiang.lottery.view.NoDataView
+            android:id="@+id/stopping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+            app:yu_background="@mipmap/no_data"
+            app:yu_remark="暂无推荐订单" />
+
+        <com.ydh.refresh_layout.SmartRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.ydh.refresh_layout.header.YuHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_renqi"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@mipmap/renqi" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="人气榜"
+                                android:textColor="@color/deep_txt"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_huibao"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@mipmap/huibao" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="回报榜"
+                                android:textColor="@color/deep_txt"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_mingzhong"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@mipmap/mingzhong" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="命中榜"
+                                android:textColor="@color/deep_txt"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_lianhong"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@mipmap/lianhong" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.8"
+                                android:gravity="center"
+                                android:text="连红榜"
+                                android:textColor="@color/deep_txt"
+                                android:textSize="@dimen/sp_12" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/gray_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/red_theme" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:text="大神榜"
+                            android:textColor="@color/deep_txt"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="8dp"
+                            android:text="推荐大神任你挑"
+                            android:textColor="@color/gray_txt"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_style_height" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/gray_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/red_theme" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:text="大神单"
+                            android:textColor="@color/deep_txt"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="8dp"
+
+                            android:text="每日神单推荐加昨日神单开奖"
+                            android:textColor="@color/gray_txt"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_todayRecommend"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/todayRecommend"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="今日神单"
+                                android:textColor="@color/red_txt"
+                                android:textSize="@dimen/sp_14" />
+
+                            <View
+                                android:id="@+id/todayRecommend_line"
+                                android:layout_width="50dp"
+                                android:layout_height="3dp"
+                                android:layout_gravity="center"
+                                android:background="@color/red_txt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_yesterday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/yesterday"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="昨日开奖"
+                                android:textColor="@color/deep_txt"
+                                android:textSize="@dimen/sp_14" />
+
+                            <View
+                                android:id="@+id/yesterday_line"
+                                android:layout_width="50dp"
+                                android:layout_height="3dp"
+                                android:layout_gravity="center"
+                                android:background="@color/red_txt"
+                                android:visibility="invisible" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View style="@style/divider_style_height" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/totaleNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="全部神单"
+                            android:textColor="@color/gray_txt"
+                            android:textSize="@dimen/sp_13" />
+
+                        <ImageView
+                            android:id="@+id/order_img"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="7dp"
+                            android:src="@mipmap/order_god_icon" />
+
+                        <TextView
+                            android:id="@+id/order_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="跟单金额"
+                            android:textSize="@dimen/sp_13"
+                            android:textColor="#3C72C3" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_style_height" />
+
+                    <com.daxiang.lottery.view.NoDataView
+                        android:id="@+id/no_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        app:yu_background="@mipmap/no_data"
+                        app:yu_image_height="150dp"
+                        app:yu_image_width="150dp"
+                        app:yu_remark="暂无推荐订单" />
+
+                    <com.daxiang.lottery.view.BillListView
+                        android:id="@+id/lv_gendan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/gray_bg"
+                        android:dividerHeight="5dp" />
+                </LinearLayout>
+
+            </ScrollView>
+
+            <com.ydh.refresh_layout.header.YuHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.ydh.refresh_layout.SmartRefreshLayout>
+    </LinearLayout>
+
+    <include layout="@layout/keybard" />
+</FrameLayout>

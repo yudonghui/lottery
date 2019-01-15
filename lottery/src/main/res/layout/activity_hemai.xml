@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<com.daxiang.lottery.view.JcTitleBar
+    android:id="@+id/titlebar_hemai"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_heigh"/>
+    <include layout="@layout/fragment_togetherbuy"/>
+</LinearLayout>

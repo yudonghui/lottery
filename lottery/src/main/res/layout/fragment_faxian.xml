@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/red_theme"
+        android:visibility="gone" />
+
+    <com.daxiang.lottery.view.TitleBar
+        android:id="@+id/wonderful_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_heigh" />
+
+    <com.ydh.refresh_layout.SmartRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false">
+
+        <com.ydh.refresh_layout.header.YuHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl_gendan"
+                style="@style/my_main_item"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    style="@style/my_main_item_img"
+                    android:src="@mipmap/score_live" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/my_main_item_tv"
+                        android:text="比分直播" />
+
+                    <TextView
+                        style="@style/my_main_item_tv_"
+                        android:text="详细的比赛信息实时更新" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/leftrow_img"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <View style="@style/divider_style_height" />
+
+            <LinearLayout
+                android:id="@+id/ll_new_match"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp">
+
+                    <ImageView
+                        android:id="@+id/home_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@mipmap/home_team" />
+
+                    <TextView
+                        android:id="@+id/home_team"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_13" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VS"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="未开始"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/guest_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@mipmap/guest_team" />
+
+                    <TextView
+                        android:id="@+id/guest_team"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/deep_txt"
+                        android:textSize="@dimen/sp_13" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/new_match_foot" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray_bg" />
+
+            <LinearLayout
+                android:id="@+id/rl_lottery_results"
+                style="@style/my_main_item"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    style="@style/my_main_item_img"
+                    android:src="@mipmap/lottery_result" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/my_main_item_tv"
+                        android:text="开奖结果" />
+
+                    <TextView
+                        style="@style/my_main_item_tv_"
+                        android:text="最新开奖结果实时查询" />
+                </LinearLayout>
+
+
+                <ImageView
+                    style="@style/leftrow_img"
+                    android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+
+            <View style="@style/divider_style_height" />
+
+            <LinearLayout
+                android:id="@+id/rl_news"
+                style="@style/my_main_item"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    style="@style/my_main_item_img"
+                    android:src="@mipmap/news" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/my_main_item_tv"
+                        android:text="新闻资讯" />
+
+                    <TextView
+                        style="@style/my_main_item_tv_"
+                        android:text="最新资讯实时更新" />
+                </LinearLayout>
+
+
+                <ImageView
+                    style="@style/leftrow_img"
+                    android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+
+            <View style="@style/divider_style_height" />
+
+            <LinearLayout
+                android:id="@+id/rl_ad"
+                style="@style/my_main_item"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    style="@style/my_main_item_img"
+                    android:src="@mipmap/ad" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/my_main_item_tv"
+                        android:text="公告通知" />
+
+                    <TextView
+                        style="@style/my_main_item_tv_"
+                        android:text="最新活动实时通知" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/leftrow_img"
+                    android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+
+            <View style="@style/divider_style_height" />
+
+            <LinearLayout
+                android:id="@+id/ll_forum"
+                style="@style/my_main_item"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/my_main_item_img"
+                    android:src="@mipmap/ad" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/my_main_item_tv"
+                        android:text="彩票论坛" />
+
+                    <TextView
+                        style="@style/my_main_item_tv_"
+                        android:text="购彩交流中心，随时和大神沟通" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/leftrow_img"
+                    android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+
+            <View style="@style/divider_style_height" />
+        </LinearLayout>
+    </com.ydh.refresh_layout.SmartRefreshLayout>
+</LinearLayout>

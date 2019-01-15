@@ -1,0 +1,141 @@
+<?xml version="1" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".activity.lotteryactivity.RechargeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_action_declare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/recharge_bg"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="活动规则："
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/action_declare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shap_news_ad">
+
+                <EditText
+                    android:id="@+id/input_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="0123456789"
+                    android:hint="@string/recharge_et_hint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/deep_txt"
+                    android:textColorHint="@color/gray_txt"
+                    android:textSize="@dimen/sp_14" />
+
+                <Button
+                    android:id="@+id/btn_input_delete"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/clear_edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_recharge_ten"
+                    style="@style/recharge_money"
+                    android:text="100元" />
+
+                <TextView
+                    android:id="@+id/tv_recharge_tweenty"
+                    style="@style/recharge_money"
+                    android:layout_marginLeft="8dp"
+                    android:text="200元" />
+
+                <TextView
+                    android:id="@+id/tv_recharge_fifty"
+                    style="@style/recharge_money"
+                    android:layout_marginLeft="8dp"
+                    android:text="500元" />
+
+                <TextView
+                    android:id="@+id/tv_recharge_handred"
+                    style="@style/recharge_money"
+                    android:layout_marginLeft="8dp"
+                    android:text="1000元" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="请选择充值方式"
+                android:textColor="@color/gray_txt" />
+
+            <com.daxiang.lottery.view.BillListView
+                android:id="@+id/lv_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/rechargeTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:lineSpacingExtra="2dp"
+                android:text="1.所有充值仅限于消费，不可提现；\n2.购彩所中奖金可以提现，无限制；"
+                android:textColor="@color/gray_txt"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

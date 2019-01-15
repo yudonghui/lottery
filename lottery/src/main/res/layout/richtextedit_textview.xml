@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daxiang.lottery.forum.album.DeletableEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:cursorVisible="true"
+    android:lineSpacingExtra="8dp"
+    android:textColor="@color/deep_txt"
+    android:textColorHint="@color/gray_txt"
+    android:textCursorDrawable="@drawable/richtextedit_cursor_shape"
+    android:textSize="@dimen/sp_14" />
+

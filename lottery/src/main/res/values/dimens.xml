@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="richtextedit_padding_top">0dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="grid_item_heigh">60dp</dimen>
+    <dimen name="faxian_heigh">60dp</dimen>
+    <dimen name="grid_item_textSize">10sp</dimen>
+    <dimen name="vp_heigh">145dp</dimen>
+    <dimen name="ball_line">250dp</dimen>
+    <dimen name="ball_size">32dp</dimen>
+    <dimen name="line">40dp</dimen>
+    <dimen name="icon_heigh">26dp</dimen>
+    <dimen name="titlebar_heigh">48dp</dimen>
+    <dimen name="radioGroup_heigh">48dp</dimen>
+    <dimen name="footer_heigh">45dp</dimen>
+    <dimen name="tubiao_size">30dp</dimen>
+    <dimen name="footer_buy">60dp</dimen>
+    <dimen name="editview_width">90dp</dimen>
+    <dimen name="width">15dp</dimen>
+    <dimen name="width_ll">95dp</dimen>
+    <dimen name="width_wenzi">285dp</dimen>
+    <dimen name="width_jq">71.25dp</dimen>
+    <dimen name="width_bf">40.71dp</dimen>
+    <!--下面这两个的和是footer_heigh的值-->
+    <dimen name="heigh_title">30dp</dimen>
+    <dimen name="heigh_odds">20dp</dimen>
+    <dimen name="heigh_listview">375dp</dimen>
+    <dimen name="heigh_listview_ball">415dp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <!--我的界面的球大小-->
+    <dimen name="ball_35">35dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="width_bf_two">81.43dp</dimen>
+    <dimen name="width_bf_three">122.14dp</dimen>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        style="@style/my_main_item"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/image_deader"
+            style="@style/my_main_item_img"
+            android:src="@drawable/jclq" />
+
+        <LinearLayout
+            android:id="@+id/ll_author_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_name"
+                style="@style/my_main_item_tv"
+                android:text="彩象彩票" />
+
+            <TextView
+                android:id="@+id/text_introduce"
+                style="@style/my_main_item_tv_"
+                android:text="昨天 15:15" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_isfocus"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="关注"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/gray_txt"
+            android:background="@drawable/shap_forum_gray"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/xia" />
+    </LinearLayout>
+</LinearLayout>

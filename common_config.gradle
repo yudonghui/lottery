@@ -1,0 +1,9 @@
+//对每个model进行统一配置
+project.ext {
+    javaVersion = 8
+    javaMaxHeapSize = "4G"
+    compileSdkVersion = 26
+    buildToolsVersion = "27.0.3"
+    minSdkVersion = 15
+    targetSdkVersion = 26
+}
